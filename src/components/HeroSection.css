@@ -1,0 +1,32 @@
+.hero-section {
+    padding: 80px 4px 60px 2em;
+}
+
+.hero-container {
+    display: 'grid'; 
+    grid-template-columns: 'repeat(auto-fit, minmax(340px, 1fr))'; 
+    gap: '60px'; 
+    align-items: 'center'; 
+}
+
+.hero-button {
+    display: 'flex';
+    gap: 16px;
+    flex-wrap: 'wrap';
+}
+
+@media(max-width:400px) {
+	.hero-section {
+		padding: 4px;
+	}
+
+    .hero-button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .hero-button {
+        width: 84%;
+    }
+}
